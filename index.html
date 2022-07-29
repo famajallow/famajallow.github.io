@@ -1,397 +1,335 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <meta name="viewport" content="“width" ="800”" />
-    <meta
-      name="generator"
-      content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org"
-    />
-    <style type="text/css">
-      /* Color scheme stolen from Sergey Karayev */
-      a {
-        color: #1772d0;
-        text-decoration: none;
-      }
-      em {
-        color: #1772d0;
-      }
+  <meta name=viewport content=“width=800”>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    em {
+    color: #1772d0;
+     }
 
-      a:focus,
-      a:hover {
-        color: #f09228;
-        text-decoration: none;
-      }
-      td,
-      th,
-      tr,
-      p,
-      a {
-        font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
-        font-size: 17px;
-        font-weight: 300;
-      }
-      /*<D-r> body {
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    td,th,tr,p,a {
+    font-family:  'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    }
+   /*<D-r> body {
     background-color: rgb(253, 253, 253) ;
     margin-top: 50px;
     } */
-      body {
-        margin: 5px 0;
-        padding: 0;
-        font-size: 100%;
-        font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif;
-        color: #fff;
-        background-color: #eee;
-        line-height: 1.4em;
-        /*background : #E4E4E4 url(bg.gif) repeat-x;*/
-        /* 	background: #E4E4E4 url(bg_light.gif) repeat-x; */
-        background: #ffffff url(bc-website-color.gif) repeat-x;
-      }
-      p {
-        margin: 0 0 5px 0;
-        padding: 0;
-        color: #404241;
-        background: inherit;
-        font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
-        font-size: 95%;
-        font-weight: 400;
-      }
+    body { 
+	margin:5px 0; 
+	padding:0; 
+	font-size: 100%;
+	font-family: "PT Serif","Georgia","Helvetica Neue",Arial,sans-serif; 
+	color:#FFF;  
+	background-color:#eee;
+	line-height: 1.4em; 
+	/*background : #E4E4E4 url(bg.gif) repeat-x;*/
+/* 	background: #E4E4E4 url(bg_light.gif) repeat-x; */
+	background: #FFFFFF url(bc-website-color.gif) repeat-x;
+    }
+p { 
+	margin: 0 0 5px 0; 
+	padding: 0; 
+	color: #404241; 
+	background: inherit;
+	font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 95%;
+    font-weight: 400;
+}
 
-      hr {
-        border: 0;
-        height: 1px;
-        color: #eee;
-        background-color: #eee;
-      }
+hr {
+   border: 0;
+   height: 1px;
+   color: #eee;
+   background-color: #eee;
+}
 
-      a {
-        background: inherit;
-        text-decoration: none;
-        font-size: 16;
-        color: #191970;
-      }
+a { 
+	background: inherit; 
+	text-decoration:none;
+	font-size:16;
+       color: #191970;
 
-      a:hover {
-        background: inherit;
-        text-decoration: none;
-      }
+}
 
-      h1 {
-        padding: 0;
-        margin: 0;
-        color: #434a55;
-        background: inherit;
-        font-family: serif;
-        /*font-size: 22px;*/
-        /*letter-spacing: 0px;*/
-      }
+a:hover { 
+	background: inherit;
+	text-decoration: none;
 
-      h1 a {
-        color: #191970;
-        background: inherit;
-      }
+}
 
-      h2 {
-        background-color: inherit;
-        color: #191970;
-        margin: 10px 20px 10px 0px;
-        padding: 15px 0px 0 0px;
-        font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-      }
+h1 { 
+	padding:0; 
+	margin:0; 
+	color: #434A55; 
+	background: inherit;
+	font-family: serif; 
+	/*font-size: 22px;*/
+	/*letter-spacing: 0px;*/
+}
 
-      h2 a {
-        /*background-color:#08152E;*/
-        /*background-color:#E4E4E4;*/
-        background-color: #ffffff;
-      }
+h1 a {
+	color: #191970; 
+	background: inherit;
+}
 
-      ul {
-        margin: 0 0 20px 0;
-        padding: 0;
-        list-style: none;
+h2 { 
+	background-color: inherit; 
+	color:#191970; 
+	margin: 10px 20px 10px 0px; 
+	padding:15px 0px 0 0px; 
+	font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+h2 a { 
+	/*background-color:#08152E;*/ 
+	/*background-color:#E4E4E4;*/
+	background-color:#FFFFFF;
+}
+
+ul { 	margin: 0 0 20px 0; 
+	padding : 0; 
+	list-style : none; 
         color: #555;
-      }
-
-      li {
-        float: left;
-        font-weight: bold;
-        margin: 10px 0 8px 0;
-        padding: 0 0 0 5px;
-        font-size: 16;
-        font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
-        font-weight: 400;
+}
+	
+li { 
+	float: left;
+	font-weight: bold;
+	margin: 10px 0 8px 0;
+	padding: 0 0 0 5px;
+	font-size: 16;
+	font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+	font-weight: 400;
         color: #404241;
-      }
 
-      li a {
-        font-size: 16;
-        font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
-        font-weight: 400;
-        color: #191970;
-      }
-      /*
+}
+
+li a { 
+font-size: 16;
+font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+font-weight: 400;
+color: #191970; }
+/*
 li a:hover {text-decoration: none; background: inherit url(select.gif) no-repeat center top;padding: 2px 4px;
 	background-position: 100% 100%;color: #DBBC58;padding: 4px 8px; background-color:#191970; border-radius: 25px;display: run-in;}
 
 
 */
 
-      strong {
-        font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
-        font-size: 15px;
-        color: #191970;
-      }
+    strong {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #191970;
 
-      heading {
-        font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
-        font-size: 23px;
-        color: #191970;
-      }
+    }
 
-      papertitle {
-        font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
-        font-size: 17px;
-        font-weight: 700;
-      }
+    heading {
+    font-family:  'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #191970;
 
-      name {
-        font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif;
-        font-size: 35px;
-        font-weight: bold;
-      }
+    }
 
-      span.highlight {
+    papertitle {
+    font-family:  'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 700
+    }
+
+    name {
+    font-family:  "PT Serif","Georgia","Helvetica Neue",Arial,sans-serif; 
+    font-size: 35px;
+    font-weight: bold;
+    }
+
+    
+    span.highlight {
         background-color: #ffffd0;
-      }
+    }
 
-      .some_list {
-        font-size: 93%;
-        font-family: "Titillium Web", Verdana, Helvetica, sans-serif;
-        font-weight: 400;
-        /*float: none;*/
-        list-style-type: circle;
-        padding: 0px;
-        margin: 0 0 10px 30px;
-      }
-    </style>
-    <link rel="icon" type="image/png" href="seal_icon.png" />
-    <title>Fama Jallow</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
-    <link
-      href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900,100italic,100,300,300italic,400italic,500italic,900italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
+.some_list { 
+	font-size: 93%;
+	font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+	font-weight: 400;
+	/*float: none;*/
+	list-style-type: circle;
+	padding : 0px; 
+	margin: 0 0 10px 30px; 
+}
+  </style>
+  <link rel="icon" type="image/png" href="seal_icon.png">
+  <title>Fama Jallow </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900,100italic,100,300,300italic,400italic,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <table
-      width="70%"
-      border="0"
-      align="center"
-      cellspacing="0"
-      cellpadding="0"
-    >
+  <table width="70%" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td>
-          <table
-            width="100%"
-            align="center"
-            border="0"
-            cellspacing="0"
-            cellpadding="20"
-          >
-            <tr>
-              <td>
-                <p>
-                  <name>Fama Jallow</name>
-                </p>
-                <p>
-                  <img src="fama-profile.jpg" width="30%" />
-                  <hr />
-                </p>
-                <p>
-                  <a href="fama-CV.pdf">CV</a> &nbsp/&nbsp
-                  <a href="https://www.linkedin.com/in/fama-jallow-840505100/">
-                    LinkedIn
-                  </a>
-                  &nbsp/&nbsp
-                  <a href="https://github.com/Fama-333">Github</a> &nbsp/&nbsp
-                  <a href="https://twitter.com/fam__aaa">Twitter</a> &nbsp/&nbsp
-                  <a> Email:</a> jallowfama3@gmail.com
-                </p>
-                <hr />
-              </td>
-            </tr>
-          </table>
+        <p>
+          <name>Fama Jallow</name>
+        </p>
+        <p>
+        <img src="fama-profile.jpg" width="30%"><hr>
+        </p>
+          <p>
+          <a href="fama-CV.pdf">CV</a> &nbsp/&nbsp
+          <a href="https://www.linkedin.com/in/fama-jallow-840505100/"> LinkedIn </a> &nbsp/&nbsp
+          <a href="https://github.com/Fama-333">Github</a> &nbsp/&nbsp
+          <a href="https://twitter.com/fam__aaa">Twitter</a>  &nbsp/&nbsp
+          <a> Email:</a> jallowfama3@gmail.com 
+        </p><hr>
+        </td>
+       </tr>
+      </table>
+      
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+        <td width="100%" valign="middle">
 
-          <table
-            width="100%"
-            align="center"
-            border="0"
-            cellspacing="0"
-            cellpadding="20"
-          >
-            <tr>
-              <td width="100%" valign="middle">
-                <p>
-                  I am a final-year Aeronautical Engineering student at Nanjing
-                  University of Aeronautics and Astronautics. I am also a
-                  graduate of Virginia Tech and the African Drone and Data
-                  Academy program in drone data and technology.I am a certified
-                  drone pilot by the Association for Unmanned Vehicle Systems
-                  International.In 2018, I received a diploma in Chinese
-                  language from Tainjin University. In my spare time, I enjoy
-                  drawing, painting, and listening to old school music.
-                </p>
-                <p>&nbsp</p>
-              </td>
-            </tr>
-          </table>
+        <p>I am a final-year Aeronautical Engineering student at Nanjing University of Aeronautics and Astronautics. I am also a graduate of Virginia Tech and the African Drone and Data Academy program in drone data and technology.I am a certified drone pilot by the  Association for Unmanned Vehicle Systems International.In 2018, I received a diploma in Chinese language from Tainjin University. In my spare time, I enjoy drawing, painting, and listening to old school music.
+       </p>
+        <p> &nbsp </p>
+        
+        </td> 
+      </tr>
+      </table>
 
-          <!--this section is for news-->
+      <!--this section is for news-->
 
-          <table
-            width="100%"
-            align="center"
-            border="0"
-            cellspacing="0"
-            cellpadding="20"
-          >
-            <tr>
-              <td width="100%" valign="middle">
-                <heading>News</heading><br /><br />
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>News</heading><br/><br/>
 
-                <p>
-                  o &nbsp&nbsp March 2022: Graduated from the African Drone and
-                  Data
-                </p>
+          <p>
+            o &nbsp&nbsp March 2022: Graduated from the African Drone and Data
+          </p>
 
-                <p>
-                  o &nbsp&nbsp January 2022:
-                  <a href="https://spacegeneration.org/">
-                    National Point of contact of Gambia for space generation
-                    Advisory Council
-                  </a>
-                </p>
+          <p>
+            o &nbsp&nbsp January 2022: 
+            <a href="https://spacegeneration.org/">
+            National Point of contact of Gambia for space generation Advisory Council
+            </a>
+          </p>
 
-                <p>
-                  o &nbsp&nbsp December 2021: African Union Global Environment
-                  Monitoring and Security Conference Scholarship
-                </p>
+          <p>
+            o &nbsp&nbsp December 2021: African Union Global Environment Monitoring and Security Conference Scholarship
+          </p>
 
-                <p>
-                  o &nbsp&nbsp October 2021:
-                  <a
-                    href="https://sa.catapult.org.uk/blogs/protecting-the-blue-economies-in-west-africa"
-                  >
-                    Common wealth Hack the Planet Competition
-                  </a>
-                </p>
+          <p>
+            o &nbsp&nbsp October 2021: 
+            <a href="https://sa.catapult.org.uk/blogs/protecting-the-blue-economies-in-west-africa">
+            Common wealth Hack the Planet Competition
+            </a>
+          </p>
 
-                <p>
-                  o &nbsp&nbsp March 2021:
-                  <a href="https://yali.state.gov">
-                    Young African Leadership Fellowship (YALI)
-                  </a>
-                </p>
+          <p>
+            o &nbsp&nbsp March 2021:
+            <a href="https://yali.state.gov"> 
+            Young African Leadership Fellowship (YALI)
+            </a>
+          </p>
 
-                <p>
-                  o &nbsp&nbsp January 2020:
-                  <a
-                    href="https://rarebirdshq.com/podcast/scholarship-to-entrepreneurship-african-students-creating-opportunities-in-china-meet-fama-jallow-from-the-gambia/"
-                  >
-                    Featured on the Rarebird Podcast
-                  </a>
-                </p>
+          <p>
+            o &nbsp&nbsp January 2020:
+            <a href="https://rarebirdshq.com/podcast/scholarship-to-entrepreneurship-african-students-creating-opportunities-in-china-meet-fama-jallow-from-the-gambia/"> 
+            Featured on the Rarebird Podcast
+            </a>
+          </p>
 
-                <p>
-                  o &nbsp&nbsp December 2019: Nanjing University of Aeronautics
-                  and Astronautic Role Model Award
-                </p>
+          <p>
+            o &nbsp&nbsp December 2019:
+            Nanjing University of Aeronautics and Astronautic Role Model Award
+          </p>
 
-                <p>
-                  o &nbsp&nbsp November 2019:
-                  <a href="theunitalks.wordpress.com">
-                    Co-founded the Unitalks Initiative
-                  </a>
-                </p>
+          <p>
+            o &nbsp&nbsp November 2019:
+            <a href="theunitalks.wordpress.com"> 
+            Co-founded the Unitalks Initiative
+            </a>
+          </p>
 
-                <p>
-                  o &nbsp&nbsp May 2019: The First Nanjing International
-                  Innovation and Startup Competition Finalist
-                </p>
+          <p>
+            o &nbsp&nbsp May 2019:
+            The First Nanjing International Innovation and Startup Competition Finalist 
+          </p>
 
-                <p>
-                  o &nbsp&nbsp August 2017: Chinese Government Undergraduate
-                  Scholarship
-                </p>
-              </td>
-            </tr>
-          </table>
-          <!-- News ends here-->
+          <p>
+            o &nbsp&nbsp August 2017:
+            Chinese Government Undergraduate Scholarship 
+          </p>
 
-          <table
-            width="100%"
-            align="center"
-            border="0"
-            cellspacing="0"
-            cellpadding="20"
-          >
-            <!-- table section for Research here-->
-            <tr>
-              <td width="100%" valign="middle">
-                <heading>Research</heading><br />
-                <br />
-                <p>
-                  I'm interested in the application of Machine Learning in
-                  Aerospace and Materials Science.
-                </p>
-              </td>
-            </tr>
-          </table>
-
-          <table
-            width="100%"
-            align="center"
-            border="0"
-            cellspacing="0"
-            cellpadding="20"
-          >
-            <!--undergrad research starts here-->
-            <tr>
-              <td width="100%" valign="middle">
-                <heading>Undergraduate Research Experience</heading><br /><br />
-
-                <p>
-                  o &nbsp&nbsp 2022: Autonomous UAV preliminary design for flood
-                  mitigation in Malawi<br />
-                  &nbsp&nbsp&nbsp&nbsp Advisor: Alexander Mtambo
-                </p>
-
-                <p>
-                  o &nbsp&nbsp 2022: Multipurpose Fixed Wing UAV with turboprop
-                  engine design<br />
-                  &nbsp&nbsp&nbsp&nbsp Supervisor: Dr. Dmytro Tiniakov
-                </p>
-
-                <p>
-                  o &nbsp&nbsp 2021: Application of satellite data for coastal
-                  monitoring in The Gambia<br />
-                  &nbsp&nbsp&nbsp&nbsp Advisor: Alhagie Manjang
-                </p>
-
-                <p>
-                  o &nbsp&nbsp October 2019: Contributed to application of drone
-                  technology project in Nanyang village China <br />
-                  &nbsp&nbsp&nbsp&nbsp Supervisor: Donglan Zhan
-                </p>
-              </td>
-            </tr>
-          </table>
-          <!-- undergrad research ends here-->
+  </td>
+  </tr>
+  </table> <!-- News ends here-->
+      
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"> <!-- table section for Research here-->
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>Research</heading><br/>
+         <br/><p> I'm interested in the application of Machine Learning in Aerospace  and Materials Science. 
+          </p>
         </td>
       </tr>
-    </table>
+      </table>
+      
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"> <!--undergrad research starts here-->
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>Undergraduate Research Experience</heading><br/><br/>
+        
+
+        <p>
+            o &nbsp&nbsp 2022: Autonomous UAV preliminary design for flood mitigation in Malawi<br/>
+            &nbsp&nbsp&nbsp&nbsp Advisor: Alexander Mtambo
+
+        </p>
+
+        <p>
+            o &nbsp&nbsp 2022: Multipurpose Fixed Wing UAV with turboprop engine design<br/>
+            &nbsp&nbsp&nbsp&nbsp Supervisor: Dr. Dmytro Tiniakov 
+        </p>
+
+        <p>
+            o &nbsp&nbsp 2021: Application of satellite data for coastal monitoring in The Gambia<br/>
+            &nbsp&nbsp&nbsp&nbsp Advisor: Alhagie Manjang 
+        </p>
+
+        <p>
+            o &nbsp&nbsp October 2019: Contributed to application of drone technology project in Nanyang village China <br/>
+            &nbsp&nbsp&nbsp&nbsp Supervisor: Donglan Zhan 
+        </p>
+
+
+        
+  </td>
+  </tr>
+  </table> <!-- undergrad research ends here-->
+
+
+     
+    </td>
+    </tr>
+  </table>
   </body>
 </html>
